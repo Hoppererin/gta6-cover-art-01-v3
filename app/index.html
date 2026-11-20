@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vice Heat — Cover Studio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">VH</span>
+      <div>
+        <h1>VICE HEAT <span>— Cover Studio</span></h1>
+        <p>Turn your photos into GTA-style poster key art. 100% offline — photos never leave this machine.</p>
+      </div>
+    </div>
+    <div class="top-actions">
+      <label class="btn btn-gold" for="fileInput">+ Add photos</label>
+      <input id="fileInput" type="file" accept="image/*" multiple hidden>
+      <button class="btn" id="dropHintBtn" type="button" title="Or drag &amp; drop photos anywhere on the page">Drag &amp; drop works too</button>
+    </div>
+  </header>
+
+  <main class="studio">
+    <section class="stage-col">
+      <div class="stage-wrap" id="stageWrap">
+        <canvas id="preview" width="1080" height="1350" aria-label="Cover preview"></canvas>
+        <div class="stage-caption"><span id="stageCaption">Trio · Vice Sunset · 1080 × 1350</span><span id="photoCount">3 photos loaded</span></div>
+      </div>
+      <p class="tip">Click a panel to select it · drag the photo inside a panel to reposition · scroll to zoom · double-click a panel to focus the face.</p>
+    </section>
+
+    <aside class="controls">
+      <section class="card">
+        <h2>1 · Layout</h2>
+        <div class="layout-grid" id="layoutGrid"></div>
+      </section>
+
+      <section class="card">
+        <h2>2 · One-click looks</h2>
+        <div class="preset-row" id="presetRow"></div>
+      </section>
+
+      <section class="card">
+        <h2>3 · Vice grade</h2>
+        <div class="grade-grid" id="gradeGrid"></div>
+      </section>
+
+      <section class="card">
+        <h2>4 · Lettering</h2>
+        <label class="field">Title
+          <input id="titleInput" type="text" value="VICE HEAT" maxlength="24" spellcheck="false">
+        </label>
+        <label class="field">Tagline
+          <input id="taglineInput" type="text" value="ONE CITY · EVERY ANGLE" maxlength="48" spellcheck="false">
+        </label>
+        <label class="field">Billing line
+          <input id="billingInput" type="text" value="A VICE HEAT PRODUCTION · STARRING YOU" maxlength="64" spellcheck="false">
+        </label>
+      </section>
+
+      <section class="card">
+        <h2>5 · Selected panel</h2>
+        <div class="panel-tools">
+          <div class="panel-id" id="panelId">Panel 1 — HERO</div>
+          <label class="field">Cast / role tag
+            <input id="tagInput" type="text" value="THE DRIVER" maxlength="20" spellcheck="false">
+          </label>
+          <label class="field">Photo
+            <select id="photoSelect"></select>
+          </label>
+          <label class="field">Zoom <span id="zoomVal">1.15×</span>
+            <input id="zoomInput" type="range" min="1" max="2.5" step="0.01" value="1.15">
+          </label>
+          <div class="btn-row">
+            <button class="btn" id="focusFaceBtn" type="button">◎ Focus face</button>
+            <button class="btn" id="centerBtn" type="button">Center crop</button>
+            <button class="btn" id="cyclePhotoBtn" type="button">Next photo →</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="card export-card">
+        <h2>6 · Export PNG</h2>
+        <div class="export-row">
+          <button class="btn btn-gold btn-export" data-size="1080x1080" type="button">⬇ 1080 × 1080</button>
+          <button class="btn btn-gold btn-export" data-size="1080x1350" type="button">⬇ 1080 × 1350</button>
+          <button class="btn btn-gold btn-export" data-size="1920x1080" type="button">⬇ 1920 × 1080</button>
+        </div>
+        <p class="export-note">Same render path as the preview — what you see is exactly what exports. PNG, no watermark, no upload.</p>
+      </section>
+    </aside>
+  </main>
+
+  <footer class="foot">
+    <span>VICE HEAT — Cover Studio · original art, lettering &amp; fonts only · no game assets</span>
+    <span>Offline · desktop Chrome · your photos stay on your machine</span>
+  </footer>
+</div>
+
+<div id="coverMode" hidden><canvas id="coverCanvas"></canvas></div>
+<div id="dropOverlay" hidden>Drop photos to load them</div>
+<script src="app.js"></script>
+</body>
+</html>
