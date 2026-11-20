@@ -63,3 +63,4 @@ system fonts; no third-party game assets are used.
 
 ---
 Entered on [make.fun](https://make.fun/r/dhj53q2r) · ref `dhj53q2r`
+<!-- witness: final README content confirmed 2026-11-20 -->
