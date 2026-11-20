@@ -1,8 +1,8 @@
 # Vice Heat — Cover Studio
 
-[![make.fun](https://make.fun/badge/gta6-cover-art-01/Hoppererin/gta6-cover-art-01-v3)](https://make.fun/competitions/gta6-cover-art-01/Hoppererin/gta6-cover-art-01-v3)
-[![make.fun entry](https://make.fun/badge/entry/gta6-cover-art-01/Hoppererin/gta6-cover-art-01-v3)](https://make.fun/competitions/gta6-cover-art-01/Hoppererin/gta6-cover-art-01-v3)
-[![make.fun score](https://make.fun/badge/score/gta6-cover-art-01/Hoppererin/gta6-cover-art-01-v3)](https://make.fun/competitions/gta6-cover-art-01/Hoppererin/gta6-cover-art-01-v3)
+[![make.fun · gta6-cover-art-01](https://make.fun/badge/gta6-cover-art-01.svg)](https://make.fun/bounty/gta6-cover-art-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-cover-art-01)
+[![rank](https://make.fun/badge/gta6-cover-art-01/Hoppererin/gta6-cover-art-01-v3/rank.svg)](https://make.fun/bounty/gta6-cover-art-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=gta6-cover-art-01)
+[![reward](https://make.fun/badge/gta6-cover-art-01/Hoppererin/gta6-cover-art-01-v3/reward.svg)](https://make.fun/bounty/gta6-cover-art-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-cover-art-01)
 
 Turn your own photos into GTA-style poster key art — the multi-panel cover look with a
 Vice City neon-sunset grade — right in your browser. **100% offline: photos never leave
